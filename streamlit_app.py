@@ -22,6 +22,12 @@ streamlit.dataframe(my_fruit_list)
 #fILTER
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 
+#STORE THE LIST OF SELECTED FRUITS INTO A SELECTED VARIABLE 
+fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+
+#USE to Access a group of rows and columns by label(s) or a boolean array.
+fruits_to_show = my_fruit_list.loc[fruits_selected]
+streamlit.dataframe(fruits_to_show)
 
 
 
