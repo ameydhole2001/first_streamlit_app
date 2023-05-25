@@ -1,3 +1,3 @@
 import streamlit
 
-streamlit.title("Hey Just Started With SNOWFLAKE")
+streamlit.title("Hey Just Started With DATA APPLICATION BUILDERS")
